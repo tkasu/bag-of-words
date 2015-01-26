@@ -2,7 +2,7 @@
   (:gen-class))
 
 (def test-text
-  "Results were bad and boss was bad. Neverthess our competitors were worse."
+  "Results were bad and the boss was bad. Neverthess our competitors were worse."
   )
 
 (def test-dict
