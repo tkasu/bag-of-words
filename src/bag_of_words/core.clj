@@ -1,5 +1,6 @@
 (ns bag-of-words.core
-  (:gen-class))
+  (:gen-class)
+  (:require [bag-of-words.dictionaries :refer :all]))
 
 (def test-text
   "Results were bad and the boss was bad. Neverthess our competitors were worse."
@@ -9,8 +10,9 @@
   #{"bad","worse","horrible"}
   )
 
-(defn -main
-  nil)
+(def test-text2
+  "almost approximate bad shit"
+  )
 
 (defn filter-special-chars-away [text]
   (apply str
@@ -34,6 +36,12 @@
           (contains? dict word))]
     (frequencies
      (filter in-dictionary?
-             (split-to-words text))))
+             (split-to-words (clojure.string/lower-case text)))))
   )
 
+(defn -main [args]
+  (println
+    (str "Uncertainty words: " (dictionary-word-frequencies dict-un args)))
+  (println
+    (str "Negative words: " (dictionary-word-frequencies dict-neg args)))
+  )
