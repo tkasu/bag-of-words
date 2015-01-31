@@ -1,6 +1,7 @@
 (ns bag-of-words.dictionaries
   )
 
+;WIP
 ;current solution to include dictionary data in clojure file is just a temporary solution for testing purposes
 
 (def dict-un-raw

@@ -39,6 +39,7 @@
              (split-to-words (clojure.string/lower-case text)))))
   )
 
+;TEST FUNCTIONALITY
 (defn -main [args]
   (println
     (str "Uncertainty words: " (dictionary-word-frequencies dict-un args)))
