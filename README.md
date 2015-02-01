@@ -4,7 +4,7 @@ WIP Word count program
 
 ## Usage
 
-Copy dictionary file(s) to "bag-of-words/recources" 
+Copy dictionary file(s) to "bag-of-words/resources" 
 (see correct file format from i.e. http://www3.nd.edu/~mcdonald/Data/Finance_Word_Lists/LoughranMcDonald_Negative.csv)
 
 Add dictionary file name(s) to vector "dict-files" in "dictionaries.clj"
