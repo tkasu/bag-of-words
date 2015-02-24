@@ -4,16 +4,21 @@ WIP Word count program
 
 ## Usage
 
-Copy dictionary file(s) to "bag-of-words/resources" 
-(see correct file format from i.e. http://www3.nd.edu/~mcdonald/Data/Finance_Word_Lists/LoughranMcDonald_Negative.csv)
+Currently data is imported to SQL-database from REPL:
 
-Add dictionary file name(s) to vector "dict-files" in "dictionaries.clj"
+    $ lein repl
 
-Compile and run the program:
+To add data to database, see:
 
-    $ lein uberjar
+    $ core/insert-release-data-to-db [release-data]
 
-    $ java -jar bag-of-words-0.1.0-standalone.jar [args]
+    $ core/insert-grouped-dict-data-to-db [dict-name group-data]
+
+To import data from .csv, see files.clj
+
+For sample data-sets, see resources/
+
+For data-analysis, see sql/queries.sql
 
 ## License
 
