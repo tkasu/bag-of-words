@@ -1,7 +1,6 @@
 (ns bag-of-words.core
   (:gen-class)
-  (:require [bag-of-words.dictionaries :as dicts]
-            [bag-of-words.database :as db]
+  (:require [bag-of-words.database :as db]
             [bag-of-words.files :as files]
             [bag-of-words.text-refactoring :as text]
             [bag-of-words.html-parse :as html]
