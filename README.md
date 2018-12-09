@@ -1,6 +1,15 @@
 # bag-of-words
 
-WIP Word count program
+Implements a simple bag-of-words sentiment analysis toolkit and data scraper to analyze e.g. financial statements and company disclosures.
+
+Functionalities:
+
+* Loads static web-pages based on provided links
+* Cleans data from non-word characters and splits text to list of words
+* Saves data to a database that is designed for a simple bag of words analysis
+* sql/queries includes analytical queries that can be used to analyze the data based on given dictionaries
+
+The program was used in the master thesis to analyze NASDAQ OMXH financial disclosures.
 
 ## Usage
 
